@@ -1,15 +1,62 @@
+import java.util.Arrays;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
-
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+        int[] weight = new int[12];
+        weight[0] = 1;
+        weight[1] = 2;
+        weight[2] = 3;
+        for (int i = 0; i < 12; i++) {
+            System.out.println(weight[i]);
         }
-    }
-}
+        double[] weights = {1.57, 7.654, 9.986, 12, 16, 223, 0, 0, 0, 0, 0, 0};
+        for (int i = 0; i < weights.length; i++) {
+            System.out.println(weights[i]);
+        }
+        int[] numbers = {43, 65, 404, 72, 56, 22, 77, 5, 0, 0, 0, 0};
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.println(numbers[i]);
+        }
+
+
+        int[] number = new int[10];
+        for (int index = 0; index < number.length; index++) {
+            number[index] = index + 1;
+        }
+        System.out.println(Arrays.toString(number));
+
+        double[] weights1 = {1.57, 7.654, 9.986, 12, 16, 223, 0, 0, 0, 0, 0, 0};
+        for (int index = 0; index < weights1.length; index++) {
+            if (index == weights1.length - 1) {
+                System.out.println(Arrays.toString(weights1));
+            }
+        }
+        int[] numbers1 = {43, 65, 404, 72, 56, 22, 77, 5, 0, 0, 0, 0};
+        for (int i = 0; i < numbers1.length; i++) {
+            if (i == numbers1.length - 1) {
+                System.out.println(Arrays.toString(numbers1));
+            }
+        }
+
+                int[] size = new int[10];
+                for (int index = 0; index < size.length; index++) {
+                    size[index] = size.length - index;
+                }
+                System.out.println(Arrays.toString(size));
+
+                int[] arr = new int[12];
+                arr[0] = 1;
+                arr[1] = 2;
+                arr[2] = 3;
+                for (int i = 0; i < arr.length; i++) {
+                    if (arr[i] % 2 != 0) {
+                        arr[i]++;
+                    }
+                }
+                System.out.println(Arrays.toString(arr));
+            }
+        }
+
+
