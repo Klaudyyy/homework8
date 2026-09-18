@@ -19,27 +19,44 @@ public class Main {
         for (int i = 0; i < numbers.length; i++) {
             System.out.println(numbers[i]);
         }
+
+
         int[] number = new int[10];
         for (int index = 0; index < number.length; index++) {
             number[index] = index + 1;
         }
         System.out.println(Arrays.toString(number));
-        int[] size = new int[10];
-        for (int index = 0; index < size.length; index++) {
-            size[index] = size.length - index;
-        }
-        System.out.println(Arrays.toString(size));
 
-        int[] arr = new int[12];
-        arr[0] = 1;
-        arr[1] = 2;
-        arr[2] = 3;
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] % 2 != 0) {
-                arr[i]++;
+        double[] weights1 = {1.57, 7.654, 9.986, 12, 16, 223, 0, 0, 0, 0, 0, 0};
+        for (int index = 0; index < weights1.length; index++) {
+            if (index == weights1.length - 1) {
+                System.out.println(Arrays.toString(weights1));
             }
         }
-            System.out.println(Arrays.toString(arr));
-    }
-}
+        int[] numbers1 = {43, 65, 404, 72, 56, 22, 77, 5, 0, 0, 0, 0};
+        for (int i = 0; i < numbers1.length; i++) {
+            if (i == numbers1.length - 1) {
+                System.out.println(Arrays.toString(numbers1));
+            }
+        }
+
+                int[] size = new int[10];
+                for (int index = 0; index < size.length; index++) {
+                    size[index] = size.length - index;
+                }
+                System.out.println(Arrays.toString(size));
+
+                int[] arr = new int[12];
+                arr[0] = 1;
+                arr[1] = 2;
+                arr[2] = 3;
+                for (int i = 0; i < arr.length; i++) {
+                    if (arr[i] % 2 != 0) {
+                        arr[i]++;
+                    }
+                }
+                System.out.println(Arrays.toString(arr));
+            }
+        }
+
 
